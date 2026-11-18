@@ -63,6 +63,8 @@ A brief can grow on the way: the coordinator plans "bring them all to the same l
 3. When the user narrows the scope mid-job ("no redesign"), stop the out-of-scope work in the same turn, keep what's in scope, and say what was dropped.
 
 ## Delivering
+Standing rule from the user (18 Nov 2026): merge pull requests when they are ready, without asking. A thread that opened a PR merges it once its checks pass and the result has been looked at, then reports it as done with the link. Merging is not a reason to park or wait for a reply. The scope rule still holds: a PR that goes beyond the user's words is reported, not merged.
+
 When the result goes out, run `deliver` with the message or file, and post it where `--deliver` says. If the user asked for it to come back to the project chat, the owner thread sends it to the coordinator to relay, not just to its own thread.
 
 ## Worked failure (why this exists)
