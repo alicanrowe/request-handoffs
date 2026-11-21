@@ -63,6 +63,7 @@ Before answering "it never got to me", "nobody asked for that", "it was never ma
 1. `ledger.py find <key words>` (try the user's words and the thing's names, for example "handle", "inlay", "tools").
 2. Your own thread history and your checklist, including lines you marked pending or paused.
 3. As coordinator: the project chat for the user's own message, and the owner thread's history.
+4. The project registry (`PROJECTS.md` next to the eta-estimating live data, see that skill's Step 0), by name and by how the user described it (colours, setting, materials), then page `list_threads` back past the last two days. A thread that stalled one step before delivery looks like "never made" from the recent list.
 
 If any of these turns up the ask, the answer is "yes, it reached <thread> at <time>; here is where it stands", not a denial. A user who says "I definitely asked" is right until a search proves otherwise. Don't let the way the question is worded steer the search: "did it come over from the jewelry thread?" still means "is the work I asked for anywhere?", so search for the work, not just for a handoff from that thread.
 
