@@ -88,6 +88,22 @@ The user should never have to ask "did that ever happen?". So:
 4. **Report back unprompted.** When a row closes, the user hears about it in the project chat (the coordinator relays it). When the user comes back after being away, the coordinator's first reply includes `report` for anything still open. Never make the user remind you.
 5. Every lesson gets folded back here (see below), so the same stall can't happen twice.
 
+## The second brain (shared vault)
+The ledger holds open asks. Where the project also keeps an Obsidian vault as shared long-term memory
+(LLM-wiki layout: `_CLAUDE.md` manual, `CRITICAL_FACTS.md`, `inbox/`, `raw/`, `wiki/{projects,rules,decisions,people,concepts,sources,questions}/`,
+`wiki/index.md`, `wiki/hot.md`, `wiki/log.md`), use it so nothing has to be asked twice:
+- **At the start of a thread:** read `CRITICAL_FACTS.md`, `wiki/hot.md`, then only the project page you need.
+- **When the user sets a rule** (any "from now on", "always", "never"): add it to `wiki/rules/` with the user's
+  exact words and date, in the same turn. Never invent a rule.
+- **When the user decides something** that would otherwise be re-asked: add a line under the project page's
+  Decisions, or a `wiki/decisions/` page for a big one, quoting the user.
+- **When `verify` closes a row:** add one line to the project page's History (what shipped, where, date) and
+  one line to `wiki/hot.md`.
+- **Every write:** one line at the top of `wiki/log.md` (date, thread, what changed). Re-read a page before
+  editing it, change only your section, keep `hot.md` short. No passwords, tokens or card numbers in the vault.
+- The ledger and the project registry stay the live records of open asks and status; the vault is the memory
+  behind them. Don't move open asks into the vault.
+
 ## Delivering
 Standing rule from the user (18 Nov 2026): merge pull requests when they are ready, without asking. A thread that opened a PR merges it once its checks pass and the result has been looked at, then reports it as done with the link. Merging is not a reason to park or wait for a reply. The scope rule still holds: a PR that goes beyond the user's words is reported, not merged.
 
