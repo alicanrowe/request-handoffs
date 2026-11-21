@@ -200,7 +200,7 @@ def main():
                      "parked": f"paused ({r.get('reason')})"}.get(r["status"], "in progress")
             print(f"- \"{r['text'][:90]}\" ({r.get('owner')}): {state}"
                   + (f", ETA {r['eta']}" if r.get("eta") else "")
-                  + (f". Last: {r['last_note']}" if r.get("last_note") else "")
+                  + (f". Last: {r['last_note'].rstrip('.')}" if r.get("last_note") else "")
                   + f". Done when: {r.get('done_check') or 'not set'}.")
     elif a.cmd == "bounce":
         change(p, get(rows, a.rid), "bounced", reason=a.reason)
