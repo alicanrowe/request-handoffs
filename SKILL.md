@@ -102,5 +102,15 @@ A third failure (20 Nov 2026): the user flagged floating wires in a Dancer rende
 
 Rules 1 to 7 each break those chains: a ledger row would have shown the ask, a park would have told the user, `stale` would have flagged it after two hours, and a search would have stopped the denial.
 
+## Excuses that don't count
+Each of these is a shortcut that ends in a broken result. If you catch yourself thinking the left column, do the right column.
+
+| The excuse | What to do instead |
+|---|---|
+| "I'll remember to come back to this" | Write the ledger row now; a parked ask without a row is a dropped ask. |
+| "It's merged, so it's done" | Done means verified and live; check the live result before closing the row. |
+| "Nobody asked about it, so it can wait" | Follow through without being asked; tell the waiting thread when you finish. |
+| "While I'm in here I'll also tidy/refactor this other bit" | Change only what the task needs. Smallest diff that works; no new options, helpers or files nobody asked for. Note other ideas for later instead. |
+
 ## Keep this skill improving
 When an ask gets lost, parked, denied or over-scoped again, add the failure to the worked failures above, tighten the rule or the script that should have stopped it, and add a case to `scripts/tests/test_ledger.py` (run it after any change to `ledger.py`). Then publish the skill.
