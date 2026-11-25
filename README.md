@@ -1,3 +1,5 @@
+![Request handoffs: A shared request ledger so no ask is dropped, parked silently or called done before it is live.](.github/banner.png)
+
 # Request handoffs skill
 
 A Claude skill for projects where a coordinator routes a person's asks to many work threads. It keeps a shared request ledger so no ask is dropped in routing, parked behind newer work without telling the person, or denied ("nobody asked for that") without a search.
